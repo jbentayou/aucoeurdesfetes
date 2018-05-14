@@ -1,0 +1,19 @@
+{
+    "monuments": [
+        { "id": "0", "titre": "Les arènes","image": "arenes_petite.png", "latitude": "43.494920", "longitude": "-1.488676"},
+        { "id": "1", "titre": "La cathédrale Ste-Marie","image": "cathedrale_petite.png", "latitude": "43.490579", "longitude": "-1.477269"},
+        { "id": "2", "titre": "L'église St-André","image": "eglise_petite.png", "latitude": "43.490558", "longitude": "-1.470972"},
+        { "id": "3", "titre": "La fontaine St-Esprit","image": "fontaineStEsprit_petite.png", "latitude": "43.495786", "longitude": "-1.469533"},
+        { "id": "4", "titre": "La gare","image": "gare_petite.png", "latitude": "43.496974", "longitude": "-1.470170"},
+        { "id": "5", "titre": "Les halles","image": "halles_petite.png", "latitude": "43.490012", "longitude": "-1.475093"},
+        { "id": "6", "titre": "La mairie","image": "mairie_petite.png", "latitude": "43.493273", "longitude": "-1.475100"},
+        { "id": "7", "titre": "Le pont Génie","image": "pontGénie_petite.png", "latitude": "43.487896", "longitude": "-1.474901"},
+        { "id": "8", "titre": "Le pont Marengo","image": "pontMarengo_petite.png", "latitude": "43.492336", "longitude": "-1.474077"},
+        { "id": "9", "titre": "Le pont Mayou","image": "pontMayou_petite.png", "latitude": "43.491010", "longitude": "-1.474343"},
+        { "id": "10", "titre": "Le pont Pannecau","image": "pontPannecau_petite.png", "latitude": "43.489755", "longitude": " -1.474557"},
+        { "id": "11", "titre": "Le pont St-Esprit","image": "pontStEsprit_petite.png", "latitude": "43.494281", "longitude": "-1.471788"},
+        { "id": "12", "titre": "Le rail bayonnais","image": "rail_petite.png", "latitude": "43.496241", "longitude": "-1.468254"},
+        { "id": "13", "titre": "La statue du Cardinal Lavigerie","image": "statueRéduit_petite.png", "latitude": "43.493349", "longitude": "-1.473444"},
+        { "id": "14", "titre": "Le trinquet","image": "trinquet_petite.png", "latitude": "43.491293", "longitude": "-1.487093"}
+    ]
+}

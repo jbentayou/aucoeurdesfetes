@@ -1,0 +1,41 @@
+BASE DE DONNEES AVEC LA COMMANDE:    
+    Création d'une table : php artisan make:model nomTable -m 
+    Mettre à jour les tables sur phpmyadmin : php artisan migrate
+    Travailler sur une table : php artisan tinker
+        $post = new App\nomTable
+        $post->nomAttribut='valeur'
+        $post->save()
+        
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ROUTAGE : app/Http/routes.php
+ROUTAGE avec arguments (exemple): 
+    Route::get('article/{n}', function($n) { 
+                            return view('article')->with('numero', $n); //créé une variable $numero avec la valeur n. Autre solution : ->withNumero($n);
+                        })->where('n', '[0-9]+'); 
+ROUTAGE avec controller:
+    Route::get('article/{n}', 'nomController@nomFonction')->where('n', '[0-9]+');
+
+VUES : resources/views
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+CRÉATION DE TEMPLATES :
+    1) On créé un fichier 'template.blade.php' où on place des @yield('nomDomaine')
+    2) On créé d'autres fichiers .php où on insère la template avec @extends('template'), puis on remplie les domaines
+        @section('nomDomaine')
+            code html
+        @stop
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+CONTROLLER : app/Http/Controllers
+    php artisan make:controller nomController
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+REPONSES :
+    $request->input('nom'); 
+    Request::input('nom')
+    
+-------------------------------------------------------------------------------------------------------------------------------------------------------------

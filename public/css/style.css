@@ -1,0 +1,1405 @@
+/* COMMUN */
+
+@font-face {
+    font-family: Akrobat-Regular;
+    src: url('/Fonts/Akrobat-Regular.otf');
+}
+
+@font-face {
+    font-family: Akrobat-SemiBold;
+    src: url('Fonts/Akrobat-SemiBold.otf');
+}
+
+@font-face {
+    font-family: Abel-Regular;
+    src: url('/Fonts/Abel-Regular.ttf');
+}
+
+@font-face {
+    font-family: Alpaca;
+    src: url('/Fonts/Alpaca Scarlett Demo.otf');
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: table;
+    font-weight: 100;
+    font-family: 'Lato';
+}
+
+.parcours, .presentation, /*.parcoursChoisi,*/ .Annexe{
+    background: url(/images/FOND-confettis.png) no-repeat center fixed, url(/images/fond_texture.png) no-repeat center fixed;
+    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+    background-size: cover; /* version standardisée */
+}
+
+.parcoursChoisi{
+    background: url(/images/bandeau.png) no-repeat fixed left top, url(/images/fond_texture.png) no-repeat center fixed;
+    /*background-position: left top;*/
+    background-size: 100% auto, 100% 100%;
+}
+
+/* PRESENTATION */
+
+.presentation {
+    padding-top: 220px;
+}
+
+.presentation .title.fete{
+    font-size: 55px;
+    margin-bottom:40px;
+    position: relative;
+    font-family: 'Alpaca';
+    text-shadow: 1px 1px 2px #000000;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.presentation .title.explication{
+    font-size: 24px;
+    position: relative;
+    text-align: left;
+    font-family: 'Abel-Regular';
+    /*background-color: rgba(255, 255, 255, 0.95);*/
+    /*background: url(/images/fond_texture.png) no-repeat center fixed;*/
+}
+
+.presentation p{
+    margin: 60px 0 50px 0;
+}
+
+.presentation .title.avatar{
+    font-size: 27px;
+    opacity:0;
+    font-family: 'Abel-Regular';
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.presentation .partenaire{
+    margin:0 25px;
+    vertical-align:middle;
+}
+
+.presentation #iut{
+    vertical-align:top;
+}
+
+.presentation #logo{
+    margin:50px 20px 20px 50px;
+    min-width:200px;
+    width:1%;
+    top:0;
+    left:0;
+    height: auto;
+    position: absolute;
+}
+
+#logo2{
+    margin:50px 20px 20px 50px;
+    min-width:100px;
+    left:0;
+    top:0;
+    width:200px;
+    height: auto;
+    position: absolute;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    /*transition-timing-function: cubic-bezier(.17,.67,.83,.67);*/
+}
+
+#logo2:hover{
+    transform:scale(1.10);
+}
+
+.presentation #photoAvtr {
+    display:none;
+}
+
+.presentation #continuer2{
+    display:none;
+}
+
+.presentation .avatars .select:hover{
+    transform:scale(1.25);
+    opacity: 1 !important;
+}
+
+.presentation .avatars img{
+    width:222px;
+    margin:0 auto;
+    position:relative;
+    cursor:pointer;
+    min-width: 80px;
+    opacity: 0.6;
+    transition: transform .2s ease-in;
+}
+
+a:focus {
+    outline:0;
+} 
+
+.presentation .row .avatars{
+    display:flex;
+    align-items:flex-end;
+    height:300px;
+    margin-top:13%;
+}
+
+.w3-button {
+    width:100px;
+    font-size: 15px;
+    height: 40px;
+    background-color: #E6E6FA;
+    color:black;
+    margin-top:25px;
+    margin-bottom: 100px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.presentation .continuer{
+  padding: 10px 15px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #348534;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  margin-top:30px;
+  margin-bottom: 10px;
+}
+
+.presentation .continuer:hover {
+    background-color: #2e732e
+}
+
+.presentation .continuer:active {
+  background-color: #2e732e;
+  transform: translateY(4px);
+}
+
+.presentation .bubble{
+    background: url(../images/bulle2.png);
+    position: absolute;
+    left:52%;
+    display:none;
+    background-size:100% 100%;
+    padding: 1.5% 4% 1.5% 5%;
+    max-width: 550px;
+    top: 370px;
+}
+
+.presentation .bubble p{
+    font-family: 'Abel-Regular';
+    color: #454545;
+    position: static;
+    font-size:22px;
+}
+
+.presentation .enfant{
+    top: 450px;
+}
+
+        /* RESPONSIVE PRESENTATION */
+        @media (max-width: 1200px){ /* Container :970px */
+            .avatars img{
+                width:182px;
+            }
+            .presentation .title.avatar{
+                font-size: 23px;
+            }
+            .presentation .avatars{
+                margin-top: 7%;
+            }
+            .presentation .title.fete{
+                font-size: 45px;
+                margin-top: 7%;
+            }
+            .presentation .title.explication{
+                font-size: 21px;
+            }
+            .presentation .bubble{
+                top: 290px;
+                left:52%;
+                padding: 1.5% 4% 1.5% 5%;
+                max-width: 450px;
+            }
+            .presentation .bubble p{
+                font-size:20px;
+            }
+            .presentation #logo{
+                min-width:150px;
+            }
+            .presentation{
+               padding-top: 200px;
+            }
+            .presentation .enfant{
+                top: 370px;
+            }
+        }
+        
+        @media (max-width: 992px){ /* Container :750px */
+            .avatars img{
+                width:150px;
+            }
+            .presentation .title.avatar{ 
+                font-size: 22px;
+                margin-left: 150px;
+                margin-right: 150px;
+            }
+            .presentation .avatars{
+                margin-top: 0%;
+            }
+            .presentation .title.fete{
+                font-size: 35px;
+                margin-top: 5%;
+                margin-left: 150px;
+                margin-right: 150px;
+            }
+            .presentation .title.explication{
+                font-size: 20px;
+            }
+            .presentation .bubble{
+                top: 310px;
+                left:52%;
+                padding: 1.5% 4% 1.5% 5%;
+                max-width: 400px;
+            }
+            .presentation .bubble p{
+                font-size:18px;
+            }
+            .presentation #logo{
+                min-width:130px;
+            }
+            .presentation{
+               padding-top: 180px;
+            }
+            .presentation .enfant{
+                top: 390px;
+            }
+        }
+        
+        @media (max-width: 768px){ /* Container :100vw */
+            .avatars img{
+                width:130px !important;
+            }
+            .presentation .title.avatar{
+                font-size: 18px;
+                margin-left: 120px;
+                margin-right: 120px;
+            }
+            .presentation .avatars{
+                margin-top: -10% !important;
+            }
+            .presentation .title.fete{
+                font-size: 2.3em;
+                margin-top: 5%;
+                margin-left: 120px;
+                margin-right: 120px;
+            }
+            .presentation .title.explication{
+                font-size: 1.35em;
+                margin-top: 0px;
+            }
+            .presentation #logo{
+                margin:10px 10px 10px 10px;
+                min-width:100px;
+            }
+            .presentation{
+               padding-top: 120px;
+            }
+            .presentation .bubble{
+                top: 170px !important;
+            }
+            .presentation .bubble p{
+                font-size:15px;
+            }
+            .presentation .partenaire{
+                margin:0 5px;
+            }
+            .presentation .enfant{
+                top: 210px !important;
+            }
+        }
+
+/* PARCOURS */
+.parcours #MonAvatar{
+    position: absolute;
+    height: auto;
+    width: 225px;
+    /*min-width: 110px;*/
+    bottom:30px;
+    left:30px;
+}
+
+.parcours .bubble{
+    background: url(../images/bulle2.png);
+    position: absolute;
+    left: 180px;
+    bottom: 210px;
+    background-size: 100% 100%;
+    padding: 4% 4% 3.5% 5%;
+    max-width: 450px;
+    min-height: 130px;
+    min-width: 400px;
+}
+
+.parcours .bubble p{
+    float: left;
+    font-family: 'Abel-Regular';
+    color: #454545;
+    font-size: 24px;
+    text-align:center;
+    width: 100%;
+    position: static;
+}
+
+.parcours #BatonPann{
+    position: absolute;
+    bottom: 0;
+    height: 80%;
+    width: auto;
+}
+
+.parcours .panneau{
+    position: absolute;
+    width: 20%;
+    height: auto;
+    transition: transform .3s;
+    cursor: pointer;
+    /*min-width: 270px;*/
+}
+
+.parcours .panneau#Panneau-festayre{
+    bottom:70%;
+    left:40%;
+}
+
+.parcours .panneau#Panneau-famille{
+    bottom:53%;
+    left:42%;
+}
+
+.parcours .panneau#Panneau-enfant{
+    bottom:31%;
+    left:38%;
+}
+
+.parcours .panneau#Panneau-carte{
+    bottom:12%;
+    left:41%;
+}
+
+.parcours .panneau:hover{
+    transform:scale(1.25);
+}
+
+.parcours .backgroundParc{
+    width:100vw;
+    height:100vh;
+    position :absolute;
+    top:0;
+    left:0;
+    opacity:0;
+}
+.parcours .bckFestayre{
+    background: url(../images/background-Festayre.jpg) no-repeat center fixed;
+    background-size: 100% 100%;
+}
+
+.parcours .bckFamille{
+    background: url(../images/background-Famille.jpg) no-repeat center fixed;
+    background-size: 100% 100%;
+}
+
+.parcours .bckEnfant{
+    background: url(../images/background-Enfant.jpg) no-repeat center fixed;
+    background-size: 100% 100%;
+}
+
+.parcours .bckCarte{
+    background: url(../images/background-Carte.png) no-repeat center fixed;
+    background-size: 100% 100%;
+}
+
+        /* RESPONSIVE PARCOURS */
+        @media (max-width: 1550px){
+            #logo2{
+                width:180px;
+                z-index:10;
+            }
+            .parcours #MonAvatar{
+                width: 190px;
+                left:25px;
+            }
+            .parcours .bubble{
+                max-width: 350px;
+                left: 150px;
+                bottom: 200px;
+                background-size: 100% 100%;
+                padding: 4% 4% 3.5% 5%;
+                min-height: 130px;
+                min-width: 300px;
+            }
+            .parcours .bubble p{
+                font-size: 21px;
+            }
+        }
+        
+        @media (max-width: 1200px){
+            .parcours .bubble{
+                max-width: 260px;
+                left: 130px;
+                bottom: 160px;
+                background-size: 100% 100%;
+                padding: 4.5% 4% 3.5% 5%;
+                min-height: 130px;
+                min-width: 250px;
+            }
+            .parcours .bubble p{
+                font-size: 18px;
+            }
+            #logo2{
+                width:150px;
+                margin:60px 20px 20px 60px;
+                z-index:10;
+            }
+            .parcours #MonAvatar{
+                width: 170px;
+                left:20px;
+            }
+        }
+        
+        @media (max-width: 992px){
+            .parcours .bubble{
+                max-width: 200px;
+                left: 100px;
+                bottom: 150px;
+                background-size: 100% 100%;
+                padding: 5% 4% 3.5% 5%;
+                min-height: 110px;
+                min-width: 180px;
+            }
+            .parcours .bubble p{
+                font-size: 16px;
+            }
+            #logo2{
+                width:130px;
+                margin:50px 20px 20px 50px;
+                z-index:10;
+            }
+            .parcours #MonAvatar{
+                width: 150px;
+                left:5px;
+            }
+        }
+        @media (max-width: 768px){
+            .parcours .bubble{
+                max-width: 160px;
+                left: 70px;
+                bottom: 70px;
+                background-size: 100% 100%;
+                padding: 5% 4% 3.5% 5%;
+                min-height: 100px;
+                min-width: 150px;
+            }
+            .parcours .bubble p{
+                font-size: 14px;
+            }
+            #logo2{
+                width:100px;
+                margin:40px 20px 20px 40px;
+                z-index:10;
+            }
+            .parcours #MonAvatar{
+                width: 110px;
+                left:0;
+                bottom:0;
+            }
+        }
+
+/* PARCOURS CHOISI */
+.parcoursChoisi .container{
+    margin-top: 80px;
+    width: 100%;
+}
+
+.parcoursChoisi {
+    width:100%;
+    height: 10%;
+    padding-top: 200px;
+}
+
+.parcoursChoisi #MonAvatar{
+    position: absolute;
+    width: 190px;
+    top: 90px;
+    right:100px;
+}
+
+.parcoursChoisi .bubble{
+    background: url(../images/bulle.png);
+    position: absolute;
+    right: 220px;
+    top: 60px;
+    background-size:100% 100%;
+    padding:4% 5%;
+    max-width: 600px;
+    min-width: 500px;
+}
+
+.parcoursChoisi .bubble p{
+    float: left;
+    font-family: 'Abel-Regular';
+    color: #454545; /*#BC1F2C;*/
+    font-size: 20px;
+    text-align:center;
+    width: 100%;
+    position: static;
+}
+
+.parcoursChoisi h1{
+    text-transform: uppercase;
+    font-family: 'Alpaca';
+    font-size: 45px;
+    margin-left: -16px;
+    margin-bottom: 3%;
+    text-shadow: 1px 1px 2px #000000;
+    /*background: url(/images/fond_texture.png) no-repeat center fixed;*/
+}
+
+.parcoursChoisi .boxVideo{
+    background: no-repeat center;
+    background-size: 100% 100%;
+    /*height: calc((1170px/4)*0.5625);*/
+    height: calc((100VW/4)*0.5625);
+    padding: 0px 0px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    transform: rotateX(90deg);
+    opacity: 0;
+}
+
+.parcoursChoisi .boxVideo:hover {
+    background-size: 120% 120%;
+}
+
+.parcoursChoisi .infosVid:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    background-size: 120% 120%;
+}
+
+.parcoursChoisi .infosVid{
+    background-color: rgba(0, 0, 0, 0);
+    width:100%;
+    height: 100%;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    padding-top: 15%;
+    margin:0 auto;
+    display: block;
+}
+
+.parcoursChoisi .titreVideo {
+    opacity:0;
+    font-family: 'Abel-Regular';
+    color: white;
+    font-size: 25px;
+    margin-top: 0px;
+    text-align: center;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    text-decoration: none;
+}
+
+.parcoursChoisi .mapIcon {
+    position: absolute;
+    bottom:8px;
+    opacity: 0;
+    right:-20px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+}
+
+.parcoursChoisi .mapIcon:hover{
+    transform: scale(1.40);
+}
+
+.infosVid:hover .titreVideo {
+    opacity: 1;
+    top: 40%;
+    margin-top: 8%;
+}
+
+.boxVideo:hover .mapIcon {
+    opacity: 1;
+    right:8px;
+}
+
+.parcoursChoisi .ordre{
+    display:none;
+}
+
+.parcoursChoisi #BatonPann{
+    position: absolute;
+    top: 75px;
+    height: 165px;
+    width: auto;
+    left: 340px;
+}
+
+.parcoursChoisi .panneau{
+    position: absolute;
+    width: 80px;
+    height: auto;
+    transition: transform .3s;
+    cursor: pointer;
+    /*min-width: 270px;*/
+}
+
+.parcoursChoisi .panneau#Panneau-festayre{
+    left: 295px;
+    top: 45px;
+}
+
+.parcoursChoisi .panneau#Panneau-famille{
+    top: 100px;
+    left: 305px;
+}
+
+.parcoursChoisi .panneau#Panneau-enfant{
+    top: 148px;
+    left: 295px;
+}
+
+.parcoursChoisi .panneau#Panneau-carte{
+    top: 190px;
+    left: 310px;
+}
+
+.parcoursChoisi .panneau:hover{
+    transform:scale(1.25);
+}
+
+a{text-decoration: none !important}
+a:focus {outline:0 !important} 
+
+        /* RESPONSIVE PARCOURS CHOISI */
+        @media (max-width: 1550px){
+            .parcoursChoisi .bubble{
+                max-width: 500px;
+                min-width: 400px;
+            }
+            .parcoursChoisi .bubble{
+                right: 200px;
+                top: 70px;
+            }
+            .parcoursChoisi #MonAvatar{
+                right:80px;
+            }
+            
+            /* Panneau */
+            .parcoursChoisi #BatonPann{
+                top: 60px;
+                height: 160px;
+                left: 300px;
+            }
+            .parcoursChoisi .panneau{
+                width: 70px;
+            }
+            .parcoursChoisi .panneau#Panneau-festayre{
+                left: 260px;
+                top: 35px;
+            }
+            .parcoursChoisi .panneau#Panneau-famille{
+                top: 90px;
+                left: 270px;
+            }
+            .parcoursChoisi .panneau#Panneau-enfant{
+                top: 130px;
+                left: 260px;
+            }
+            .parcoursChoisi .panneau#Panneau-carte{
+                top: 175px;
+                left: 275px;
+            }
+        }
+        @media (max-width: 1200px){
+            .parcoursChoisi .boxVideo {
+                /*height: calc((970px/3)*0.5625); /* 3 par lignes */
+                height: calc((100VW/3)*0.5625);
+            }
+            .parcoursChoisi h1{
+                font-size: 40px;
+            }
+            .parcoursChoisi .bubble{
+                max-width: 400px;
+                right: 160px;
+                top: 70px;
+            }
+            .parcoursChoisi .bubble p{
+                font-size: 18px;
+            }
+            .parcoursChoisi .container{
+                margin-top: 50px;
+            }
+            .parcoursChoisi #MonAvatar{
+                top: 90px;
+                right:55px;
+                width: 160px;
+            }
+            
+            /* Panneau */
+            .parcoursChoisi #BatonPann{
+                top: 75px;
+                height: 130px;
+                left: 300px;
+            }
+            .parcoursChoisi .panneau{
+                width: 65px;
+            }
+            .parcoursChoisi .panneau#Panneau-festayre{
+                left: 263px;
+                top: 50px;
+            }
+            .parcoursChoisi .panneau#Panneau-famille{
+                top: 95px;
+                left: 270px;
+            }
+            .parcoursChoisi .panneau#Panneau-enfant{
+                top: 130px;
+                left: 263px;
+            }
+            .parcoursChoisi .panneau#Panneau-carte{
+                top: 165px;
+                left: 275px;
+            }
+        }
+        @media (max-width: 992px){
+            .parcoursChoisi .boxVideo {
+                /*height: calc((750px/2)*0.5625); /* 2 par lignes */
+                height: calc((100VW/2)*0.5625);
+            }
+            .parcoursChoisi h1{
+                font-size: 35px;
+            }
+            .parcoursChoisi .bubble{
+                max-width: 350px;
+                right: 165px;
+                min-width: 300px;
+                top:70px;
+            }
+            .parcoursChoisi .bubble p{
+                font-size: 16px;
+            }
+            .parcoursChoisi .container{
+                margin-top: 30px;
+            }
+            .parcoursChoisi #MonAvatar{
+                top: 80px;
+                right:80px;
+                width: 150px;
+            }
+            
+            /* Panneau */
+            .parcoursChoisi #BatonPann{
+                top: 60px;
+                height: 120px;
+                left: 245px;
+            }
+            .parcoursChoisi .panneau{
+                width: 60px;
+            }
+            .parcoursChoisi .panneau#Panneau-festayre{
+                left: 210px;
+                top: 38px;
+            }
+            .parcoursChoisi .panneau#Panneau-famille{
+                top: 80px;
+                left: 220px;
+            }
+            .parcoursChoisi .panneau#Panneau-enfant{
+                top: 110px;
+                left: 210px;
+            }
+            .parcoursChoisi .panneau#Panneau-carte{
+                top: 144px;
+                left: 222px;
+            }
+        }
+        @media (max-width: 768px){
+            .parcoursChoisi .boxVideo {
+                height: calc(100vw*0.5625); /* 1 par lignes */
+            }
+            .parcoursChoisi .bubble{
+                min-width: 300px;
+                max-width: 300px;
+                right: 145px;
+            }
+            .parcoursChoisi .bubble p{
+                font-size: 14px;
+            }
+            .parcoursChoisi h1 {
+                margin-left: 10px;
+            }
+            .parcoursChoisi .container{
+                margin-top: 0px;
+            }
+            .parcoursChoisi #MonAvatar{
+                top: 70px;
+                right:80px;
+                width: 130px;
+            }
+            
+            /* Panneau */
+            .parcoursChoisi #BatonPann{
+                top: 40px;
+                height: 100px;
+                left: 180px;
+            }
+            .parcoursChoisi .panneau{
+                width: 50px;
+            }
+            .parcoursChoisi .panneau#Panneau-festayre{
+                left: 150px;
+                top: 20px;
+            }
+            .parcoursChoisi .panneau#Panneau-famille{
+                top: 55px;
+                left: 160px;
+            }
+            .parcoursChoisi .panneau#Panneau-enfant{
+                top: 83px;
+                left: 150px;
+            }
+            .parcoursChoisi .panneau#Panneau-carte{
+                top: 110px;
+                left: 160px;
+            }
+        }
+
+/* PETIT LEON */
+
+.Annexe {
+    width:100%;
+    height: 10%;
+    padding-top: 300px;
+}
+
+.Annexe #MonAvatar{
+    position: absolute;
+    width:10%;
+    min-width: 110px;
+    top:3%;
+    right:3%;
+}
+
+.Annexe h1{
+    text-transform: uppercase;
+    font-family: 'Alpaca';
+    font-size: 45px;
+    margin-bottom: 5%;
+    text-shadow: 1px 1px 2px #000000;
+    /*background: url(/images/fond_texture.png) no-repeat center fixed;*/
+    margin-top: 0;
+}
+
+.Annexe h2{
+    text-transform: uppercase;
+    font-family: 'Alpaca';
+    font-size: 30px;
+    border-radius: 25px;
+    background: #ED493B;
+    color:white;
+    padding: 10px 0px 2px 20px;
+    text-align: justify;
+}
+
+.Annexe h3{
+    font-family: 'Abel-Regular';
+    font-size: 30px;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: justify;
+}
+
+.Annexe h4{
+    font-family: 'Abel-Regular';
+    font-size: 25px;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: justify;
+}
+
+.Annexe p{
+    font-family: 'Abel-Regular';
+    font-size: 20px;
+    /*background: url(/images/fond_texture.png) no-repeat center fixed;*/
+    margin: 0px 5% 30px 5%;
+    text-align: justify;
+}
+
+.Annexe .partenaires{
+    vertical-align:middle;
+    width:100%;
+    margin:0 auto;
+}
+
+.Annexe .partenaires img{
+    height:auto;
+    width: 25% !important;
+    margin: 20px 4% 20px 4%;
+}
+
+        /* RESPONSIVE PETIT LEON */
+        @media (max-width: 1200px){ /* Container :970px */
+            .Annexe h1{
+                font-size: 40px;
+            }
+            .Annexe h2, .Annexe h3{
+                font-size: 27px;
+            }
+            .Annexe h4{
+                font-size: 22px;
+            }
+            .Annexe p{
+                font-size: 18px;
+            }
+            .Annexe {
+                padding-top: 250px;
+            }
+        }
+        @media (max-width: 992px){ /* Container :750px */
+            .Annexe h1{
+                font-size: 35px;
+            }
+            .Annexe h2, .Annexe h3{
+                font-size: 24px;
+            }
+            .Annexe h4{
+                font-size: 19px;
+            }
+            .Annexe p{
+                font-size: 16px;
+            }
+            .Annexe {
+                padding-top: 230px;
+            }
+        }
+        @media (max-width: 768px){ /* Container :100vw */
+            .Annexe h1{
+                font-size: 35px;
+            }
+            .Annexe h2, .Annexe h3{
+                font-size: 22px;
+            }
+            .Annexe h4{
+                font-size: 17px;
+            }
+            .Annexe p{
+                font-size: 15px;
+            }
+            .Annexe {
+                padding-top: 180px;
+                margin-left: 18px;
+            }
+        }
+        
+/* BARRE D'ICONES */
+.IconBar {
+    position: fixed;
+    right: 15px;
+    bottom: 10px;
+}
+
+.IconBar i{
+    margin:0 5px;
+}
+
+.IconBar .iconFB{
+    color: #3B5998;
+}
+
+.IconBar .iconSon{
+    color: #5d5d5d;
+    cursor: pointer;
+}
+
+.IconBar .iconPL{
+    color: #e50d27;
+}
+
+.IconBar .iconInfo{
+    color: #2c8633;
+}
+
+/* MAP */
+.map #MonAvatar{
+    position: absolute;
+    height: auto;
+    width: 225px;
+    /*min-width: 110px;*/
+    bottom:30px;
+    left:30px;
+    z-index: 7;
+}
+
+.map #logo2{
+    position: absolute;
+    z-index: 7;
+}
+
+.map .marker{
+    transition: 0.3s;
+    z-index: 100;
+}
+
+.map .marker:before{
+    /*content: attr(data-content);*/
+    opacity:0;
+    width: 100px;
+    height: 100px;
+    z-index: 100;
+}
+
+.map .marker:hover:before{
+    opacity:1;
+}
+
+.map .marker:hover{
+    transform: scale(1.40);
+}
+
+.map .bubble{
+    background: url(../images/bulle2.png);
+    position: absolute;
+    left: 180px;
+    bottom: 210px;
+    background-size: 100% 100%;
+    padding: 4% 4% 3.5% 5%;
+    max-width: 450px;
+    min-height: 130px;
+    min-width: 400px;
+    z-index: 100;
+}
+
+.map .bubble p{
+    float: left;
+    font-family: 'Abel-Regular';
+    color: #454545;
+    font-size: 22px;
+    text-align:center;
+    width: 100%;
+    position: static;
+    z-index: 100;
+}
+
+.map .panneau{
+    position: absolute;
+    width: 80px;
+    height: auto;
+    transition: transform .3s;
+    cursor: pointer;
+    /*min-width: 270px;*/
+    z-index: 100;
+}
+
+.map #BatonPann{
+    position: absolute;
+    top: 75px;
+    height: 165px;
+    width: auto;
+    left: 340px;
+    z-index: 100;
+}
+
+.map .panneau#Panneau-festayre{
+    left: 295px;
+    top: 45px;
+}
+
+.map .panneau#Panneau-famille{
+    top: 100px;
+    left: 305px;
+}
+
+.map .panneau#Panneau-enfant{
+    top: 148px;
+    left: 295px;
+}
+
+.map .panneau#Panneau-carte{
+    top: 190px;
+    left: 310px;
+}
+
+.map .panneau:hover{
+    transform:scale(1.25);
+}
+
+.map .survol{
+	   width: 18%;
+	   height: auto;
+	   border-radius: 2%;
+	   z-index: 100;
+	   position:absolute;
+	   right : 60px;
+	   bottom:40px;
+	   display:none;
+	   box-shadow: 8px 8px 8px 2px rgba(0,0,0,0.4);
+	   border: 5px solid white;
+	   transform: rotate(+3deg);
+	   -moz-transform: rotate(+3deg);
+	}
+
+.map .survol2{
+	   width: 30%;
+	   height: auto;
+	   border-radius: 2%;
+	   z-index: 100;
+	   position:absolute;
+	   right : 80px;
+	   bottom:30px;
+	   display:none;
+	   box-shadow: 8px 8px 8px 2px rgba(0,0,0,0.4);
+	   border: 5px solid white;
+	   transform: rotate(-3deg);
+	   -moz-transform: rotate(-3deg);
+	}
+
+/* RESPONSIVE PARCOURS */
+        @media (max-width: 1550px){
+            .map #MonAvatar{
+                width: 190px;
+                left:25px;
+            }
+            .map .bubble{
+                max-width: 350px;
+                left: 150px;
+                bottom: 200px;
+                background-size: 100% 100%;
+                padding: 4% 4% 3.5% 5%;
+                min-height: 130px;
+                min-width: 300px;
+            }
+            .map .bubble p{
+                font-size: 19px;
+            }
+            
+            /* Panneau */
+            .map #BatonPann{
+                top: 60px;
+                height: 160px;
+                left: 300px;
+            }
+            .map .panneau{
+                width: 70px;
+            }
+            .map .panneau#Panneau-festayre{
+                left: 260px;
+                top: 35px;
+            }
+            .map .panneau#Panneau-famille{
+                top: 90px;
+                left: 270px;
+            }
+            .map .panneau#Panneau-enfant{
+                top: 130px;
+                left: 260px;
+            }
+            .map .panneau#Panneau-carte{
+                top: 175px;
+                left: 275px;
+            }
+        }
+        
+        @media (max-width: 1200px){
+            .map .bubble{
+                max-width: 260px;
+                left: 130px;
+                bottom: 160px;
+                background-size: 100% 100%;
+                padding: 4.5% 4% 3.5% 5%;
+                min-height: 130px;
+                min-width: 250px;
+            }
+            .map .bubble p{
+                font-size: 16px;
+            }
+            .map #MonAvatar{
+                width: 170px;
+                left:20px;
+            }
+            
+            /* Panneau */
+            .map #BatonPann{
+                top: 75px;
+                height: 130px;
+                left: 300px;
+            }
+            .map .panneau{
+                width: 65px;
+            }
+            .map .panneau#Panneau-festayre{
+                left: 263px;
+                top: 50px;
+            }
+            .map .panneau#Panneau-famille{
+                top: 95px;
+                left: 270px;
+            }
+            .map .panneau#Panneau-enfant{
+                top: 130px;
+                left: 263px;
+            }
+            .map .panneau#Panneau-carte{
+                top: 165px;
+                left: 275px;
+            }
+        }
+        
+        @media (max-width: 992px){
+            .map .bubble{
+                max-width: 200px;
+                left: 100px;
+                bottom: 150px;
+                background-size: 100% 100%;
+                padding: 5% 4% 3.5% 5%;
+                min-height: 110px;
+                min-width: 180px;
+            }
+            .map .bubble p{
+                font-size: 14px;
+            }
+            .map #MonAvatar{
+                width: 150px;
+                left:5px;
+            }
+            
+            /* Panneau */
+            .map #BatonPann{
+                top: 60px;
+                height: 120px;
+                left: 245px;
+            }
+            .map .panneau{
+                width: 60px;
+            }
+            .map .panneau#Panneau-festayre{
+                left: 210px;
+                top: 38px;
+            }
+            .map .panneau#Panneau-famille{
+                top: 80px;
+                left: 220px;
+            }
+            .map .panneau#Panneau-enfant{
+                top: 110px;
+                left: 210px;
+            }
+            .map .panneau#Panneau-carte{
+                top: 144px;
+                left: 222px;
+            }
+        }
+        @media (max-width: 768px){
+            .map .bubble{
+                max-width: 160px;
+                left: 70px;
+                bottom: 70px;
+                background-size: 100% 100%;
+                padding: 5% 4% 3.5% 5%;
+                min-height: 100px;
+                min-width: 150px;
+            }
+            .map .bubble p{
+                font-size: 12px;
+            }
+            .map #MonAvatar{
+                width: 110px;
+                left:0;
+                bottom:0;
+            }
+            /* Panneau */
+            .map #BatonPann{
+                top: 40px;
+                height: 100px;
+                left: 180px;
+            }
+            .map .panneau{
+                width: 50px;
+            }
+            .map .panneau#Panneau-festayre{
+                left: 150px;
+                top: 20px;
+            }
+            .map .panneau#Panneau-famille{
+                top: 55px;
+                left: 160px;
+            }
+            .map .panneau#Panneau-enfant{
+                top: 83px;
+                left: 150px;
+            }
+            .map .panneau#Panneau-carte{
+                top: 110px;
+                left: 160px;
+            }
+        }
+        
+        .my-icon {
+          border-radius: 100%;
+          width: 20px;
+          height: 20px;
+          text-align: center;
+          line-height: 20px;
+          color: white;
+        }
+        
+        .icon-dc {
+          background: #f1513b;
+        }
+        
+        .icon-sf {
+          background: #f1513b;
+        }
+
+/* LOADER */
+.loader {
+  border: 10px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 10px solid #3498db;
+  width: 70px;
+  height: 70px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+  left:49%;
+  top:43%;
+  position: fixed;
+  z-index: 500;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
