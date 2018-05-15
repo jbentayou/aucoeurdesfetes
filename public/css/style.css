@@ -1066,6 +1066,9 @@ a:focus {outline:0 !important}
 .map .marker{
     transition: 0.3s;
     z-index: 100;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .map .marker:before{
