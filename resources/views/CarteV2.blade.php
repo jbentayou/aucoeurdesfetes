@@ -3,17 +3,17 @@
 	@include('header')
 <body class="map" onload="playMusicBackground('musiques/musique-Carte')" >
 	<div id='map'>
-		<a href="/parcours-{!! $avatar !!}">{!! Image('/images/logo ACDFB.png', "logo", ['id=logo2 class="img-rounded"']) !!}</a>
-	    {!! Image('/images/'.$avatar.'-parcours.png', "MonAvatar", ['id=MonAvatar class="img-rounded"']) !!}
+		<a href="/parcours-{!! $avatar !!}">{!! Html::Image('/images/logo ACDFB.png', "logo", ['id=logo2 class="img-rounded"']) !!}</a>
+	    {!! Html::Image('/images/'.$avatar.'-parcours.png', "MonAvatar", ['id=MonAvatar class="img-rounded"']) !!}
 	    <div id="bulleDeb" class="bubble animated fadeIn">
 	        <p id="bulleAvatar">Bienvenue dans les rues de Bayonne !</p>
 	    </div>
 	    <!-- Panneau -->
-	        {!! Image('/images/panneau-baton.png', "BatonPann", ['id=BatonPann']) !!}
-	        <a href="/Cartev2-{!! $avatar !!}/Festayre-0" style="text-decoration:none">{!! Image('/images/Panneau-1.png', "Panneau", ['id=Panneau-festayre class=panneau ']) !!}</a>
-	        <a href="/Cartev2-{!! $avatar !!}/Famille-0" style="text-decoration:none">{!! Image('/images/Panneau-2.png', "Panneau", ['id=Panneau-famille class=panneau']) !!}</a>
-	        <a href="/Cartev2-{!! $avatar !!}/Enfant-0" style="text-decoration:none">{!! Image('/images/Panneau-3.png', "Panneau", ['id=Panneau-enfant class=panneau']) !!}</a>
-	        <a href="/Cartev2-{!! $avatar !!}" style="text-decoration:none">{!! Image('/images/Panneau-5.png', "Panneau", ['id=Panneau-carte class=panneau']) !!}</a>
+	        {!! Html::Image('/images/panneau-baton.png', "BatonPann", ['id=BatonPann']) !!}
+	        <a href="/Cartev2-{!! $avatar !!}/Festayre-0" style="text-decoration:none">{!! Html::Image('/images/Panneau-1.png', "Panneau", ['id=Panneau-festayre class=panneau ']) !!}</a>
+	        <a href="/Cartev2-{!! $avatar !!}/Famille-0" style="text-decoration:none">{!! Html::Image('/images/Panneau-2.png', "Panneau", ['id=Panneau-famille class=panneau']) !!}</a>
+	        <a href="/Cartev2-{!! $avatar !!}/Enfant-0" style="text-decoration:none">{!! Html::Image('/images/Panneau-3.png', "Panneau", ['id=Panneau-enfant class=panneau']) !!}</a>
+	        <a href="/Cartev2-{!! $avatar !!}" style="text-decoration:none">{!! Html::Image('/images/Panneau-5.png', "Panneau", ['id=Panneau-carte class=panneau']) !!}</a>
 	</div>
 	
 	<script>

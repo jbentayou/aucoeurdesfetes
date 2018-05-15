@@ -5,7 +5,7 @@
     <!--<body background="/images/FOND.png" class="parcours">-->
     <body class="Annexe">
         <div class="headerPL">
-            <a href="javascript:history.go(-1)">{!! Image('/images/logo ACDFB.png', "logo", ['id=logo2 class="img-rounded"']) !!}</a>
+            <a href="javascript:history.go(-1)">{!! Html::Image('/images/logo ACDFB.png', "logo", ['id=logo2 class="img-rounded"']) !!}</a>
         </div>
         <div class="container">
             <h1>Mentions légales du site</h1>
@@ -26,9 +26,9 @@
             <h2>Auteur et Réalisation : </h2><h3><b>Roland Dargelez</b></h3><br/>
             <h2>Partenaires : </h2>
                 <div class="partenaires">
-                    {!! Image('/images/iut.png', "iut", ['id=iut  width=19% class=partenaire']) !!}
-                    {!! Image('/images/fac.png', "fac", ['id=fac width=19% class=partenaire']) !!}
-                    {!! Image('/images/aadp.jpg', "aadp", ['id=aadp width=19% class=partenaire']) !!}
+                    {!! Html::Image('/images/iut.png', "iut", ['id=iut  width=19% class=partenaire']) !!}
+                    {!! Html::Image('/images/fac.png', "fac", ['id=fac width=19% class=partenaire']) !!}
+                    {!! Html::Image('/images/aadp.jpg', "aadp", ['id=aadp width=19% class=partenaire']) !!}
                 </div><br/>
             <h2>Equipe de développement : </h2>
             <h3><b>Jean Bentayou -</b> Développeur</h3><br/>
