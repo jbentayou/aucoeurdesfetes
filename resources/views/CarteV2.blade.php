@@ -87,7 +87,7 @@
 		    el.style.background= 'url('+lienPicto+') no-repeat center fixed';
 		    //$(el).attr('data-content',"<img src='url(https://au-coeur-des-fetes-jbentayou.c9users.io/images/Icon-Fils.png)' />");
 		    //$(el).before('<img src="http://dailypost.ng/wp-content/uploads/2018/02/Efe.jpg" class="flickr" />');
-		    el.style.backgroundSize= '100% 100%';
+		    el.style.backgroundSize= 'contain';
 		    el.style.width = '40px';
 		    el.style.height = '50px';
 
@@ -160,7 +160,7 @@
 					    el.style.background= 'url('+lienPicto+') no-repeat center fixed';
 					    //$(el).attr('data-content',"<img src='url(https://au-coeur-des-fetes-jbentayou.c9users.io/images/Icon-Fils.png)' />");
 					    //$(el).before('<img src="http://dailypost.ng/wp-content/uploads/2018/02/Efe.jpg" class="flickr" />');
-					    el.style.backgroundSize= '100% 100%';
+					    el.style.backgroundSize= 'contain';
 					    el.style.width = '45px';
 					    el.style.height = '65px';
 					    
