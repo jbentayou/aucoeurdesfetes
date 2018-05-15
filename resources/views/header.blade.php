@@ -45,7 +45,7 @@
         <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
         <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v0.45.0/mapbox-gl.js"></script>
         <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v0.45.0/mapbox-gl.css" rel="stylesheet" />
-        <link rel="stylesheet" href="{{secure_asset('css/map.css')}}">
+        <link rel="stylesheet" href="{{asset('css/map.css')}}">
         <script
     		src="https://code.jquery.com/jquery-3.3.1.js"
     		integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
