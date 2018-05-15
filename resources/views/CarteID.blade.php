@@ -74,6 +74,7 @@
 		/* global marker */
 		/* global $ */
 		/* global TimelineLite */
+		/* global changeSound */
 		
 		var la = "{{ $d->videoS['latitude'] }}"
 		var li = "{{ $d->videoS['longitude'] }}"
@@ -123,6 +124,10 @@
 		    tl2.to(document.getElementById('survol'+"{{ $d->id }}"), 0, {display:'none'})
 		    tl2.play();
 	    });
+	    
+	    el.addEventListener('click', function() {
+			changeSound();
+		});
 	    
 	    var ytb = document.createElement('a');
 	    ytb.setAttribute("id", "ytb"+idPicto);

@@ -67,6 +67,7 @@
 			/* global marker */
 			/* global $ */
 			/* global TimelineLite */
+			/* global changeSound */
 			
 			var la = "{{$d->latitude}}";
 			var li = "{{$d->longitude}}";
@@ -105,6 +106,10 @@
 				tl2.to(document.getElementById('bulleDeb'), 0, {display:'none'})
 			    tl2.to(document.getElementById('survol'+"{{ $d->id }}"), 0, {display:'none'})
 			    tl2.play();
+		    });
+		    
+		    el.addEventListener('click', function() {
+				changeSound();
 		    });
 		    
 		    var ytb = document.createElement('a');
