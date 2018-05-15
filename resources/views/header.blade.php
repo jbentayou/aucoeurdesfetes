@@ -6,7 +6,7 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
-        <link rel="stylesheet" href="{{ URL::asset('css/style.css',true) }}" type="text/css"/>
+        
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         
         <!-- FONTAWESOME -->
@@ -62,5 +62,6 @@
           gtag('config', 'UA-119034862-1');
         </script>
 
+<link rel="stylesheet" href="{{ asset('css/style.css') }}" type="text/css"/>
 
     </head>
