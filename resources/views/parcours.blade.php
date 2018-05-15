@@ -8,8 +8,8 @@
         <div class="backgroundParc bckEnfant" id="bckEnfant"></div>
         <div class="backgroundParc bckCarte" id="bckCarte"></div>
         <div class="text-center">
-            <a href="/parcours-{!! $avatar !!}">{!! Html::Image('/images/logo ACDFB.png', "logo", ['id=logo2 class="img-rounded"'], true) !!}</a>
-            {!! Html::Image('/images/'.$avatar.'-parcours.png', "MonAvatar", ['id=MonAvatar class="img-rounded"'], true) !!}
+            <a href="/parcours-{!! $avatar !!}">{!! Image('/images/logo ACDFB.png', "logo", ['id=logo2 class="img-rounded"']) !!}</a>
+            {!! Image('/images/'.$avatar.'-parcours.png', "MonAvatar", ['id=MonAvatar class="img-rounded"']) !!}
             <!--<hgroup class='speech-bubble' id='bulle1'><p>Où est-ce-que je vous enmène ?</p></hgroup>-->
             <div id="bulleDeb" class="bubble">
                 <p>Où est-ce-que je vous emmène ?</p>
@@ -26,11 +26,11 @@
             <div id='bulleCarte' class="bubble" style="display: none;">
                 <p>60 moments des fêtes sur une carte : Choisissez ceux que vous souhaitez visionner...</p>
             </div>
-            {!! Html::Image('/images/panneau-baton.png', "BatonPann", ['id=BatonPann'], true) !!}
-            <a href="/parcours-{!! $avatar !!}/Festayre" style="text-decoration:none">{!! Html::Image('/images/Panneau-1.png', "Panneau", ['id=Panneau-festayre class=panneau '], true) !!}</a>
-            <a href="/parcours-{!! $avatar !!}/Famille" style="text-decoration:none">{!! Html::Image('/images/Panneau-2.png', "Panneau", ['id=Panneau-famille class=panneau'], true) !!}</a>
-            <a href="/parcours-{!! $avatar !!}/Enfant" style="text-decoration:none">{!! Html::Image('/images/Panneau-3.png', "Panneau", ['id=Panneau-enfant class=panneau'], true) !!}</a>
-            <a href="/Cartev2-{!! $avatar !!}" style="text-decoration:none">{!! Html::Image('/images/Panneau-4.png', "Panneau", ['id=Panneau-carte class=panneau'], true) !!}</a>
+            {!! Image('/images/panneau-baton.png', "BatonPann", ['id=BatonPann']) !!}
+            <a href="/parcours-{!! $avatar !!}/Festayre" style="text-decoration:none">{!! Image('/images/Panneau-1.png', "Panneau", ['id=Panneau-festayre class=panneau ']) !!}</a>
+            <a href="/parcours-{!! $avatar !!}/Famille" style="text-decoration:none">{!! Image('/images/Panneau-2.png', "Panneau", ['id=Panneau-famille class=panneau']) !!}</a>
+            <a href="/parcours-{!! $avatar !!}/Enfant" style="text-decoration:none">{!! Image('/images/Panneau-3.png', "Panneau", ['id=Panneau-enfant class=panneau']) !!}</a>
+            <a href="/Cartev2-{!! $avatar !!}" style="text-decoration:none">{!! Image('/images/Panneau-4.png', "Panneau", ['id=Panneau-carte class=panneau']) !!}</a>
         </div>
         
         <script type="text/javascript">

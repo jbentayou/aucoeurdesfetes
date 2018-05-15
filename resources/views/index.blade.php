@@ -4,25 +4,25 @@
     
     <body class="presentation" onload="playMusicBackground('musiques/27 course de vache 1')">
         <div class="text-center">
-            <a href="/">{!! Html::Image('/images/logo ACDFB.png', "logo", ['id=logo class="img-rounded animated zoomIn"'], true) !!}</a>
+            <a href="/">{!! Image('/images/logo ACDFB.png', "logo", ['id=logo class="img-rounded animated zoomIn"']) !!}</a>
             <div id="p1" class="container">
                 <div id="fete" class="title fete">ON VOUS EMMÈNE FAIRE LA FÊTE !</div>
                 <p id="explication" class="title explication">Bienvenue !<br/>Immergez-vous dans la plus grande fête du Sud-Ouest, vous retrouvez les festayres bayonnais pendant cinq jours. Une famille bayonnaise vous propose de vous accompagner dans la découverte de l'ambiance festive et chaleureuse des rues bayonnaises et de ses traditions. <br/><br/>
                 Une web-création de R. Dargelez.</p>
-                {!! Html::Image('/images/iut.png', "iut", ['id=iut  width=19% class=partenaire'], true) !!}
-                {!! Html::Image('/images/fac.png', "fac", ['id=fac width=19% class=partenaire'], true) !!}
-                {!! Html::Image('/images/aadp.jpg', "aadp", ['id=aadp width=19% class=partenaire'], true) !!}<br/>
+                {!! Image('/images/iut.png', "iut", ['id=iut  width=19% class=partenaire']) !!}
+                {!! Image('/images/fac.png', "fac", ['id=fac width=19% class=partenaire']) !!}
+                {!! Image('/images/aadp.jpg', "aadp", ['id=aadp width=19% class=partenaire']) !!}<br/>
                 <button id="continuer1" class="button continuer" onclick="continuer1()">Continuer ❯</button>
                 <div id="avatar" class="title avatar">Choisissez l'un des membres de la famille qui vous accompagnera durant votre voyage... au coeur des fêtes !</div>
                 <section id="photoAvtr" class="row">
                     <div class="avatars col-md-12 col-xs-12">
-                        {!! Html::Image('/images/homme-300.png', "homme", ['id=avatar1 onclick=selection(1,"homme") onmouseover=sonRire("homme") class="homme select"'], true) !!}
-                        {!! Html::Image('/images/femme-300.png', "femme", ['id=avatar2 onclick=selection(2,"femme") onmouseover=sonRire("femme") class="femme select"'], true) !!}
-                        {!! Html::Image('/images/garcon-300.png', "garcon", ['id=avatar3 onclick=selection(3,"garcon") onmouseover=sonRire("garcon") class="fils select"'], true) !!}
-                        {!! Html::Image('/images/fille-300.png', "fille", ['id=avatar4 onclick=selection(4,"fille") onmouseover=sonRire("fille") class="fille select"'], true) !!}
+                        {!! Image('/images/homme-300.png', "homme", ['id=avatar1 onclick=selection(1,"homme") onmouseover=sonRire("homme") class="homme select"']) !!}
+                        {!! Image('/images/femme-300.png', "femme", ['id=avatar2 onclick=selection(2,"femme") onmouseover=sonRire("femme") class="femme select"']) !!}
+                        {!! Image('/images/garcon-300.png', "garcon", ['id=avatar3 onclick=selection(3,"garcon") onmouseover=sonRire("garcon") class="fils select"']) !!}
+                        {!! Image('/images/fille-300.png', "fille", ['id=avatar4 onclick=selection(4,"fille") onmouseover=sonRire("fille") class="fille select"']) !!}
                         <!--<hgroup class='speech-bubble' id='bullePres'><p>Vous êtes prêt ?  vous avez mis votre tenu blanche ? Nous vous souhaitons de bonnes fêtes… C'est parti !</p></hgroup>-->
                         <!--<div id='bullePres3'>
-                            {!! Html::Image('/images/bulle2.png', "bullePres5", ['id=bullePres5'], true) !!}
+                            {!! Image('/images/bulle2.png', "bullePres5", ['id=bullePres5']) !!}
                             <p>Vous êtes prêt ?  vous avez mis votre tenu blanche ?<br/> Nous vous souhaitons de bonnes fêtes… C'est parti !</p>
                         </div>-->
                     </div>

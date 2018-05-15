@@ -4,18 +4,18 @@
     
     <body class="parcoursChoisi" onload="playMusicBackground('musiques/musique-{{ $parcours }}')">
         <div class="headerParc">
-            <a href="/parcours-{!! $avatar !!}">{!! Html::Image('/images/logo ACDFB.png', "logo", ['id=logo2 class="img-rounded"'], true) !!}</a>
+            <a href="/parcours-{!! $avatar !!}">{!! Image('/images/logo ACDFB.png', "logo", ['id=logo2 class="img-rounded"']) !!}</a>
             <div id="bulleF1" class="bubble">
                 <p>Bienvenue dans le parcours {{ $parcours }} !</p>
             </div>
             <!-- Avatar -->
-            {!! Html::Image('/images/'.$avatar.'-bandeau.png', "MonAvatar", ['id=MonAvatar class="img-rounded"'], true) !!}
+            {!! Image('/images/'.$avatar.'-bandeau.png', "MonAvatar", ['id=MonAvatar class="img-rounded"']) !!}
             <!-- Panneau -->
-            {!! Html::Image('/images/panneau-baton.png', "BatonPann", ['id=BatonPann'], true) !!}
-            <a href="/parcours-{!! $avatar !!}/Festayre" style="text-decoration:none">{!! Html::Image('/images/Panneau-1.png', "Panneau", ['id=Panneau-festayre class=panneau '], true) !!}</a>
-            <a href="/parcours-{!! $avatar !!}/Famille" style="text-decoration:none">{!! Html::Image('/images/Panneau-2.png', "Panneau", ['id=Panneau-famille class=panneau'], true) !!}</a>
-            <a href="/parcours-{!! $avatar !!}/Enfant" style="text-decoration:none">{!! Html::Image('/images/Panneau-3.png', "Panneau", ['id=Panneau-enfant class=panneau'], true) !!}</a>
-            <a href="/Cartev2-{!! $avatar !!}" style="text-decoration:none">{!! Html::Image('/images/Panneau-4.png', "Panneau", ['id=Panneau-carte class=panneau'], true) !!}</a>
+            {!! Image('/images/panneau-baton.png', "BatonPann", ['id=BatonPann']) !!}
+            <a href="/parcours-{!! $avatar !!}/Festayre" style="text-decoration:none">{!! Image('/images/Panneau-1.png', "Panneau", ['id=Panneau-festayre class=panneau ']) !!}</a>
+            <a href="/parcours-{!! $avatar !!}/Famille" style="text-decoration:none">{!! Image('/images/Panneau-2.png', "Panneau", ['id=Panneau-famille class=panneau']) !!}</a>
+            <a href="/parcours-{!! $avatar !!}/Enfant" style="text-decoration:none">{!! Image('/images/Panneau-3.png', "Panneau", ['id=Panneau-enfant class=panneau']) !!}</a>
+            <a href="/Cartev2-{!! $avatar !!}" style="text-decoration:none">{!! Image('/images/Panneau-4.png', "Panneau", ['id=Panneau-carte class=panneau']) !!}</a>
         </div>
         <div class="container">
             <!--<h1 id="bienvenue">BIENVENUE SUR LE PARCOURS {{ $parcours }} !</h1>-->
