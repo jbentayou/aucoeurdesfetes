@@ -54,7 +54,7 @@
     				          <form action="{{route('admin.map.destroy', $d->id)}}" method="POST">
     				          	{{csrf_field()}}
     				          	{{method_field('DELETE')}}
-    				          	 <button type="submit" class="btn btn-outline-danger">
+    				          	 <button type="submit" onclick="return ConfirmDelete()" class="btn btn-outline-danger">
     				          	 	<span class="btn-label"><i class="fas fa-trash-alt"></i></span>Supprimer</a>
     				          	 </button>
     				          </form>
@@ -69,3 +69,14 @@
 	</div><!-- end card-->
    
 @endsection
+
+<script>
+
+  function ConfirmDelete()
+  {
+	  var x = confirm("Etes-vous sûr de vouloir supprimer cet enregistrement ?");
+	  if (x) return true;
+	  else return false;
+  }
+
+</script>

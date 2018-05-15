@@ -119,26 +119,26 @@ function redirectionMap(){
     document.location.href="http://www.google.com"
 }
 
-var music = new Audio();
+var musicbckg = new Audio();
 
 function playMusicBackground(musique){
-    music.src = musique+".mp3";
-    console.log(music);
-    music.play();
+    musicbckg.src = musique+".mp3";
+    console.log(musicbckg);
+    musicbckg.play();
 }
 
 var etatSon="on";
 
 function changeSound(){
     if(etatSon=="on"){
-        music.volume = 0;
+        musicbckg.volume = 0;
         $('#iconSon').removeClass('fa-volume-up');
         $('#iconSon').addClass('fa-volume-off');
         etatSon="off";
         $('#iconSon').css('margin', '0px 23px 0px 5px');
     }
     else if(etatSon=="off"){
-        music.volume = 1;
+        musicbckg.volume = 1;
         $('#iconSon').removeClass('fa-volume-off');
         $('#iconSon').addClass('fa-volume-up');
         etatSon="on";

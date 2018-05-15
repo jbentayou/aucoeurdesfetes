@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
 	@include('header')
-<body class="map">
- 
+<body class="map" onload="playMusicBackground('musiques/musique-{{ $parcours }}')" >
 <div id='map'>
 	<a href="/parcours-{!! $avatar !!}">{!! Html::Image('/images/logo ACDFB.png', "logo", ['id=logo2 class="img-rounded"'], true) !!}</a>
     {!! Html::Image('/images/'.$avatar.'-parcours.png', "MonAvatar", ['id=MonAvatar class="img-rounded"'], true) !!}
@@ -18,6 +17,20 @@
 </div>
 
 <script>
+	/* global $ */
+	/* global TimelineLite */
+		$("#logo2").mouseover(function(){
+			document.getElementById("bulleAvatar").innerHTML = "Retournez au menu principal.";
+		    var tl3 = new TimelineLite();
+			tl3.to(document.getElementById('bulleDeb'), 0, {display:'block'})
+			tl3.play();
+		});
+		$("#logo2").mouseout(function(){
+		    var tl4 = new TimelineLite();
+			tl4.to(document.getElementById('bulleDeb'), 0, {display:'none'})
+			tl4.play();
+		});
+		
 	switch("{{ $parcours }}"){
 		case "Festayre": document.getElementById("bulleAvatar").innerHTML = "De jour ou de nuit, vivez le parcours du festayre sur 8.5km. Un conseil : équipez-vous de bonnes chaussures !";
 						break;
