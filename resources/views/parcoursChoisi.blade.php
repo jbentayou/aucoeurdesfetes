@@ -4,7 +4,7 @@
     
     <body class="parcoursChoisi" onload="playMusicBackground('musiques/musique-{{ $parcours }}')">
         <div class="headerParc">
-            <a href="/parcours-{!! $avatar !!}">{!! Html::Image('/images/logo ACDFB.png', "logo", ['id=logo2 class="img-rounded"']) !!}</a>
+            <a href="/parcours-{!! $avatar !!}">{!! Html::Image('/images/logo ACDFB-2.png', "logo", ['id=logo2 class="img-rounded"']) !!}</a>
             <div id="bulleF1" class="bubble">
                 <p>Bienvenue dans le parcours {{ $parcours }} !</p>
             </div>

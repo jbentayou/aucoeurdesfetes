@@ -8,7 +8,7 @@
         <div class="backgroundParc bckEnfant" id="bckEnfant"></div>
         <div class="backgroundParc bckCarte" id="bckCarte"></div>
         <div class="text-center">
-            <a href="/parcours-{!! $avatar !!}">{!! Html::Image('/images/logo ACDFB.png', "logo", ['id=logo2 class="img-rounded"']) !!}</a>
+            <a href="/parcours-{!! $avatar !!}">{!! Html::Image('/images/logo ACDFB-2.png', "logo", ['id=logo2 class="img-rounded"']) !!}</a>
             {!! Html::Image('/images/'.$avatar.'-parcours.png', "MonAvatar", ['id=MonAvatar class="img-rounded"']) !!}
             <!--<hgroup class='speech-bubble' id='bulle1'><p>Où est-ce-que je vous enmène ?</p></hgroup>-->
             <div id="bulleDeb" class="bubble">

@@ -53,14 +53,14 @@
         </script>
         
         <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119034862-1"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-        
-          gtag('config', 'UA-119034862-1');
-        </script>
+            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119290567-1"></script>
+            <script>
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+            
+              gtag('config', 'UA-119290567-1');
+            </script>
 
 <link rel="stylesheet" href="{{ asset('css/style.css') }}" type="text/css"/>
 

@@ -5,7 +5,7 @@
     <!--<body background="/images/FOND.png" class="parcours">-->
     <body class="Annexe">
         <div class="headerPL">
-            <a href="javascript:history.go(-1)">{!! Html::Image('/images/logo ACDFB.png', "logo", ['id=logo2 class="img-rounded"']) !!}</a>
+            <a href="javascript:history.go(-1)">{!! Html::Image('/images/logo ACDFB-2.png', "logo", ['id=logo2 class="img-rounded"']) !!}</a>
         </div>
         <div class="container">
             <h1>Le Petit Leon</h1>

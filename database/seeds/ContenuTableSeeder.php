@@ -72,7 +72,7 @@ class ContenuTableSeeder extends Seeder
             'latitude' => '-1.46877', 
             'longitude' => '43.49631',
             'imgPicto' => 'Icon-Pere.png', //juste le nom
-            'imgSurvol' => '1mqdefault.jpg', //juste le nom
+            'imgSurvol' => '10.jpg', //juste le nom
         ]);
         
        
@@ -170,7 +170,7 @@ class ContenuTableSeeder extends Seeder
             'latitude' => '-1.47136', 
             'longitude' => '43.48987', 
             'imgPicto' => 'Icon-Fils.png', //juste le nom
-            'imgSurvol' => '2mqdefault.jpg', //juste le nom
+            'imgSurvol' => '20.jpg', //juste le nom
         ]);
          DB::table('contenus')->insert([
             'id'=> 21,
@@ -263,7 +263,7 @@ class ContenuTableSeeder extends Seeder
             'latitude' => '-1.47825', 
             'longitude' => '43.48807', 
             'imgPicto' => 'Icon-Pere.png', //juste le nom
-            'imgSurvol' => '3mqdefault.jpg', //juste le nom
+            'imgSurvol' => '30.jpg', //juste le nom
         ]);
          DB::table('contenus')->insert([
             'id'=>31,
@@ -344,7 +344,7 @@ class ContenuTableSeeder extends Seeder
             'latitude' => '-1.48558', 
             'longitude' => '43.48918', 
             'imgPicto' => 'Icon-Pere.png', //juste le nom
-            'imgSurvol' => '4mqdefault.jpg', //juste le nom
+            'imgSurvol' => '40.jpg', //juste le nom
         ]);
          DB::table('contenus')->insert([
             'id'=>41,
@@ -415,7 +415,7 @@ class ContenuTableSeeder extends Seeder
             'latitude' => '-1.47448', 
             'longitude' => '43.49015',
             'imgPicto' => 'Icon-Pere.png', //juste le nom
-            'imgSurvol' => '5mqdefault.jpg', //juste le nom
+            'imgSurvol' => '50.jpg', //juste le nom
         ]); 
         DB::table('contenus')->insert([
             'id'=>51,
@@ -430,8 +430,8 @@ class ContenuTableSeeder extends Seeder
          DB::table('contenus')->insert([
             'id'=>52,
             'titre'=>'Pelote basque',
-            'video' => 'https://www.youtube.com/watch?v=ZCi9dv7hJFk&t=7s', //lien
-            'miniature' => 'https://img.youtube.com/vi/ZCi9dv7hJFk&t=7s/mqdefault.jpg', //lien 
+            'video' => 'https://www.youtube.com/watch?v=ZCi9dv7hJFk', //lien
+            'miniature' => 'https://img.youtube.com/vi/ZCi9dv7hJFk/mqdefault.jpg', //lien 
             'latitude' => '-1.47835', 
             'longitude' => '43.48523',
             'imgPicto' => 'Icon-Pere.png', //juste le nom
@@ -506,7 +506,7 @@ class ContenuTableSeeder extends Seeder
             'latitude' => '-1.47532', 
             'longitude' => '43.48971',
             'imgPicto' => 'Icon-Mere.png', //juste le nom
-            'imgSurvol' => '6mqdefault.jpg', //juste le nom
+            'imgSurvol' => '60.jpg', //juste le nom
         ]);
          DB::table('contenus')->insert([
             'id'=>61,
@@ -570,7 +570,7 @@ class ContenuTableSeeder extends Seeder
             'latitude' => '-1.47628', 
             'longitude' => '43.49179', 
             'imgPicto' => 'Icon-Mere.png', //juste le nom
-            'imgSurvol' => '7mqdefault.jpg', //juste le nom
+            'imgSurvol' => '70.jpg', //juste le nom
         ]);
         
          DB::table('contenus')->insert([
