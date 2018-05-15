@@ -90,8 +90,9 @@
 	    var el = document.createElement('div');
 	    el.id = 'marker'+idPicto;
 	    el.className = 'marker';
-	    el.style.background= 'url('+lienPicto+') no-repeat center fixed';
-	    el.style.backgroundSize= '100% 100%';
+	    
+	    el.style.background= 'url('+lienPicto+') no-repeat center';
+		el.style.backgroundSize= 'contain';
 	    if(idSelected == 0 && "{{ $d->ordre }}" == 1){
 	    	map.flyTo({
 		        center: ["{{ $d->videoS['latitude'] }}","{{ $d->videoS['longitude'] }}"]
@@ -172,11 +173,8 @@
 					    el.id = "Monument"+idPicto;
 					    el.className = 'marker';
 					    
-					    //el.style.background= 'url(https://au-coeur-des-fetes-jbentayou.c9users.io/images/'+picto+') no-repeat center fixed';
-					    el.style.background= 'url('+lienPicto+') no-repeat center fixed';
-					    //$(el).attr('data-content',"<img src='url(https://au-coeur-des-fetes-jbentayou.c9users.io/images/Icon-Fils.png)' />");
-					    //$(el).before('<img src="http://dailypost.ng/wp-content/uploads/2018/02/Efe.jpg" class="flickr" />');
-					    el.style.backgroundSize= '100% 100%';
+					    el.style.background= 'url('+lienPicto+') no-repeat center';
+						el.style.backgroundSize= 'contain';
 					    el.style.width = '45px';
 					    el.style.height = '65px';
 					    
