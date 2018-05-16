@@ -103,6 +103,30 @@ class MonumentsTableSeeder extends Seeder
             'latitude' => '-1.487093',
             'longitude' => '43.491293',
         ]);
+          DB::table('monuments')->insert([
+            'titre' => 'Stade Belascain',
+            'image' => 'stade.png', //lien 
+            'latitude' => '-1.477088',
+            'longitude' => '43.487537',
+        ]);
+        DB::table('monuments')->insert([
+            'titre' => 'Chateau vieux',
+            'image' => 'chateauVieux.png', //lien 
+            'latitude' => '-1.477810',
+            'longitude' => '43.491843',
+        ]);
+        DB::table('monuments')->insert([
+            'titre' => 'Musée basque',
+            'image' => 'museeBasque.png', //lien 
+            'latitude' => '-1.473669',
+            'longitude' => '43.491124',
+        ]);
+        DB::table('monuments')->insert([
+            'titre' => 'Université de Bayonne',
+            'image' => 'universite.png', //lien 
+            'latitude' => '-1.470465',
+            'longitude' => '43.489466',
+        ]);
         
     }
 }
