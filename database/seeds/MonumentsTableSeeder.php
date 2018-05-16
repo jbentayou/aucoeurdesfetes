@@ -26,7 +26,7 @@ class MonumentsTableSeeder extends Seeder
         ]);
         DB::table('monuments')->insert([
             'titre' => 'L\'église St-André',
-            'image' => 'eglise_grande.png', //lien 
+            'image' => 'egliseStAndre_grande.png', //lien 
             'latitude' => '-1.470972',
             'longitude' => '43.490558',
         ]);

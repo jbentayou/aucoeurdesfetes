@@ -483,8 +483,8 @@ class ContenuTableSeeder extends Seeder
             'titre'=>'Corso lumineux 2',
             'video' => 'https://www.youtube.com/watch?v=qhBLITPB5ns', //lien
             'miniature' => 'https://img.youtube.com/vi/qhBLITPB5ns/mqdefault.jpg', //lien 
-            'latitude' => '-1.4747', 
-            'longitude' => '43.49273',
+            'latitude' => '-1.4751', 
+            'longitude' => '43.49414',
             'imgPicto' => 'Icon-Mere.png', //juste le nom
             'imgSurvol' => '58.jpg', //juste le nom
         ]);
@@ -534,8 +534,8 @@ class ContenuTableSeeder extends Seeder
             'titre'=>'Défilé des bandas',
             'video' => 'https://www.youtube.com/watch?v=4vpw30JAjhw', //lien
             'miniature' => 'https://img.youtube.com/vi/4vpw30JAjhw/mqdefault.jpg', //lien 
-            'latitude' => '-1.4708', 
-            'longitude' => '43.49055',
+            'latitude' => '-1.47668', 
+            'longitude' => '43.49243',
             'imgPicto' => 'Icon-Fille.png', //juste le nom
             'imgSurvol' => '65.jpg', //juste le nom
         ]);
