@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	@include('header')
-<body class="map" onload="playMusicBackground('musiques/musique-{{ $parcours }}')" >
+<body class="map" onload="playMusicBackground('../musiques/musique-{{ $parcours }}')" >
 <div id='map'>
 	<a href="/parcours-{!! $avatar !!}">{!! Html::Image('/images/logo ACDFB-2.png', "logo", ['id=logo2 class="img-rounded"']) !!}</a>
     {!! Html::Image('/images/'.$avatar.'-parcours.png', "MonAvatar", ['id=MonAvatar class="img-rounded"']) !!}
