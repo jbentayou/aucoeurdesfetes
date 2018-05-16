@@ -351,8 +351,8 @@ class ContenuTableSeeder extends Seeder
             'titre'=>'Chant basque ',
             'video'=>'https://youtu.be/kQGBXU4Uqqk', //lien
             'miniature' => 'https://img.youtube.com/vi/kQGBXU4Uqqk/mqdefault.jpg', //lien 
-            'latitude' => '-1.47749', 
-            'longitude' => '43.49218',
+            'latitude' => '-1.47747', 
+            'longitude' => '43.49212',
             'imgPicto' => 'Icon-Mere.png', //juste le nom
             'imgSurvol' => '41.jpg', //juste le nom
         ]);

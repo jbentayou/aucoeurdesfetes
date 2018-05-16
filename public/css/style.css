@@ -1039,6 +1039,19 @@ a:focus {outline:0 !important}
     cursor: pointer;
 }
 
+.IconBarMap {
+    position: fixed;
+    right: 20px;
+    top: 10px;
+    z-index:500;
+    cursor: pointer;
+}
+
+.IconBarMap .iconSon{
+    color: #5d5d5d;
+    cursor: pointer;
+}
+
 .IconBar .iconPL{
     color: #e50d27;
 }

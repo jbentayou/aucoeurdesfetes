@@ -129,6 +129,14 @@ function playMusicBackground(musique){
 
 var etatSon="on";
 
+function toMute(){
+    musicbckg.volume = 0;
+    $('#iconSon').removeClass('fa-volume-up');
+    $('#iconSon').addClass('fa-volume-off');
+    etatSon="off";
+    $('#iconSon').css('margin', '0px 23px 0px 5px');
+}
+
 function changeSound(){
     if(etatSon=="on"){
         musicbckg.volume = 0;

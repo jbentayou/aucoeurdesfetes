@@ -127,7 +127,7 @@
 	    });
 	    
 	    el.addEventListener('click', function() {
-			changeSound();
+			toMute();
 		});
 	    
 	    var ytb = document.createElement('a');
@@ -217,7 +217,9 @@
 						});
             </script>
             @endforeach
-            
+    <div class="IconBarMap">
+        <i onclick="changeSound()" class="iconSonMap fas fa-volume-up fa-2x" id="iconSon"></i>
+    </div>
 	<div class="loader"></div>
 	<script type="text/javascript">
 	/* global $ */
