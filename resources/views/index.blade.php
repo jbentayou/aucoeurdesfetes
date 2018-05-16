@@ -61,6 +61,7 @@
             
             function continuer1(){
                 //Deuxieme Timeline
+                document.getElementById('continuer1').removeAttribute("onclick");
                 var tl2 = new TimelineLite();
                 
                 //Disparition éléments

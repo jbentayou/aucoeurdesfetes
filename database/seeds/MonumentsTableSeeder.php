@@ -76,8 +76,8 @@ class MonumentsTableSeeder extends Seeder
         DB::table('monuments')->insert([
             'titre' => 'Le pont Pannecau',
             'image' => 'pontPannecau_grande.png', //lien 
-            'latitude' => '-1.474557',
-            'longitude' => '43.489755',
+            'latitude' => '-1.474544',
+            'longitude' => '43.489767',
         ]);
         DB::table('monuments')->insert([
             'titre' => 'Le pont St-Esprit',
